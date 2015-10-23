@@ -1,0 +1,144 @@
+#This is the same code as the one used in the volleyball data. There's a space in between each year. 
+It looks long but its the same thing copied and pasted over and over for each year.  
+#It almost fully works.In 2012, the minutes part worked perfectly but the hours did not. 
+I was trying to figure out why and thought I share it to see if anyone else had any way to fix it. The code is below:  
+
+men2012$V8Hours <- substr(men2012$V8,1,1)
+str(men2012$V8)
+men2012$V8Hours <- as.integer(men2012$V8)
+men2012$V8Minutes <- as.integer(substr(men2012$V8,3,4))
+men2012$V8TotalTime <- men2012$V8Hours * 60 + men2012$V8Minutes
+summary(men2012$V8TotalTime) #no error shown but makes all observations N/A
+men2012$V8Hours <- NULL
+men2012$V8Minutes <- NULL
+View(men2012)
+
+men2011$V9Hours <- substr(men2011$V9,1,1)
+str(men2011$V9)
+men2011$V9Hours <- as.integer(men2011$V9) #hours not working counting up [1,2,3,4....]
+men2011$V9Minutes <- as.integer(substr(men2011$V9,3,4)) #the minutes work as they should
+men2011$V9TotalTime <- men2011$V9Hours * 60 + men2011$V9Minutes
+summary(men2011$V9TotalTime) #no error shown but makes all observations N/A
+men2011$V9Hours <- NULL
+men2011$V9Minutes <- NULL
+View(men2011)
+
+men2010$V9Hours <- substr(men2010$V9,1,1)
+str(men2010$V9)
+men2010$V9Hours <- as.integer(men2010$V9) #hours not working counting up [1,2,3,4....]
+men2010$V9Minutes <- as.integer(substr(men2010$V9,3,4)) #the minutes work as they should
+men2010$V9TotalTime <- men2010$V9Hours * 60 + men2010$V9Minutes
+summary(men2010$V9TotalTime) #no error shown but makes all observations N/A
+men2010$V9Hours <- NULL
+men2010$V9Minutes <- NULL
+View(men2010)
+
+men2009$V8Hours <- substr(men2009$V8,1,1)
+str(men2009$V8)
+men2009$V8Hours <- as.integer(men2009$V8) #hours are counting up by observation [1,2,3,4....]
+men2009$V8Minutes <- as.integer(substr(men2009$V8,3,4)) #the minutes work as they should
+men2009$V8TotalTime <- men2009$V8Hours * 60 + men2009$V8Minutes
+summary(men2009$V8TotalTime) #no error shown but makes all observations N/A
+men2009$V8Hours <- NULL
+men2009$V8Minutes <- NULL
+View(men2009)
+
+men2008$V11Hours <- substr(men2008$V11,1,1)
+str(men2009$V11)
+men2008$V11Hours <- as.integer(men2008$V11) #hours are counting up by observation [1,2,3,4....]
+men2008$V11Minutes <- as.integer(substr(men2008$V11,3,4)) #the minutes work as they should
+men2008$V11TotalTime <- men2008$V11Hours * 60 + men2008$V11Minutes
+summary(men2008$V11TotalTime) #no error shown but makes all observations N/A
+men2008$V11Hours <- NULL
+men2008$V11Minutes <- NULL
+View(men2008)
+
+men2007$V7Hours <- substr(men2007$V7,1,1)
+str(men2007$V7)
+men2007$V7Hours <- as.integer(men2007$V7) #hours are counting up by observation [1,2,3,4....]
+men2007$V7Minutes <- as.integer(substr(men2007$V7,3,4)) #the minutes work as they should
+men2007$V7TotalTime <- men2007$V7Hours * 60 + men2007$V7Minutes
+summary(men2007$V7TotalTime) #no error shown but makes all observations N/A
+men2007$V77Hours <- NULL
+men2007$V7Minutes <- NULL
+View(men2007)
+
+men2006$V7 <- substr(men2006$V7,1,1)
+str(men2006$V7)
+men2006$V7Hours <- as.integer(men2006$V7) #hours are counting up by observation [1,2,3,4....]
+men2006$V7Minutes <- as.integer(substr(men2006$V7,3,4)) #the minutes work as they should
+men2006$V7TotalTime <- men2006$V7Hours * 60 + men2006$V7Minutes
+summary(men2006$V7TotalTime) #no error shown but makes all observations N/A
+men2006$V7Hours <- NULL
+men2006$V7Minutes <- NULL
+View(men2006)
+
+men2005$V6Hours <- substr(men2005$V6,1,1)
+str(men2005$V6)
+men2005$V6Hours <- as.integer(men2005$V6) #hours are counting up by observation [1,2,3,4....]
+men2005$V6Minutes <- as.integer(substr(men2005$V6,3,4)) #the minutes work as they should
+men2005$V6TotalTime <- men2005$V6Hours * 60 + men2005$V6Minutes
+summary(men2005$V6TotalTime) #no error shown but makes all observations N/A
+men2005$V6Hours <- NULL
+men2005$V6Minutes <- NULL
+View(men2005)
+
+men2004$V7Hours <- substr(men2004$V7,1,1)
+str(men2004$V7)
+men2004$V7Hours <- as.integer(men2004$V7) #hours are counting up by observation [1,2,3,4....]
+men2004$V7Minutes <- as.integer(substr(men2004$V7,3,4)) #the minutes work as they should
+men2004$V7TotalTime <- men2004$V7Hours * 60 + men2004$V7Minutes
+summary(men2004$V7TotalTime) #no error shown but makes all observations N/A
+men2004$V7Hours <- NULL
+men2004$V7Minutes <- NULL
+View(men2004)
+
+men2003$V8Hours <- substr(men2003$V8,1,1)
+str(men2003$V8)
+men2003$V8Hours <- as.integer(men2003$V8) #hours are counting up by observation [1,2,3,4....]
+men2003$V8Minutes <- as.integer(substr(men2003$V8,3,4)) #the minutes work as they should
+men2003$V8TotalTime <- men2003$V8Hours * 60 + men2003$V8Minutes
+summary(men2003$V8TotalTime) #no error shown but makes all observations N/A
+men2003$V8Hours <- NULL
+men2003$V8Minutes <- NULL
+View(men2003)
+
+men2002$V6Hours <- substr(men2002$V6,1,1)
+str(men2002$V6)
+men2002$V6Hours <- as.integer(men2002$V6) #hours are counting up by observation [1,2,3,4....]
+men2002$V6Minutes <- as.integer(substr(men2002$V6,3,4)) #the minutes work as they should
+men2002V6TotalTime <- men2002$V6Hours * 60 + men2002$V6Minutes
+summary(men2002V6TotalTime) #no error shown but makes all observations N/A
+men2002$V6Hours <- NULL
+men2002$V6Minutes <- NULL
+View(men2002)
+
+men2001$V6Hours <- substr(men2001$V6,1,1)
+str(men2001$V6)
+men2001$V6Hours <- as.integer(men2001$V6) #hours are counting up by observation [1,2,3,4....]
+men2001$V6Minutes <- as.integer(substr(men2001$V6,3,4)) #the minutes work as they should
+men2001$V6TotalTime <- men2001$V6Hours * 60 + men2001$V6Minutes
+summary(men2001$V6TotalTime) #no error shown but makes all observations N/A
+men2001$V6Hours <- NULL
+men2001$V6Minutes <- NULL
+View(men2001)
+
+men2000$V8Hours <- substr(men2000$V8,1,1)
+str(men2000$V8)
+men2000$V8Hours <- as.integer(men2000$V8) #hours are counting up by observation [1,2,3,4....]
+men2000$V8Minutes <- as.integer(substr(men2000$V8,3,4)) #the minutes work as they should
+men2000$V8TotalTime <- men2000$V8Hours * 60 + men2000$V8Minutes
+summary(men2000$V8TotalTime) #no error shown but makes all observations N/A
+men2000$V8Hours <- NULL
+men2000$V8Minutes <- NULL
+View(men2000)
+
+men1999$V6Hours <- substr(men1999$V6,1,1)
+str(men2003$V6)
+men1999$V6Hours <- as.integer(men1999$V6) #hours are counting up by observation [1,2,3,4....]
+men1999$V6Minutes <- as.integer(substr(men1999$V6,3,4)) #the minutes work as they should
+men1999$V6TotalTime <- men1999$V6Hours * 60 + men1999$V6Minutes
+summary(men1999$V6TotalTime) #no error shown but makes all observations N/A
+men1999$V6Hours <- NULL
+men1999$V6Minutes <- NULL
+View(men1999)
